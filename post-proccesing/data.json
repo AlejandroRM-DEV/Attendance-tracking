@@ -1,0 +1,19 @@
+{
+    "attendance": {
+        "-NWkLoFklJRZUccglGiI": {
+            "curp": "OEAF771012HMCRGR09",
+            "fecha": "2023-05-31 05:50:08",
+            "tipo": "ENTRADA"
+        },
+        "-NWkLqH9Bh3jHNCJ4GqL": {
+            "curp": "OEAF771012HMCRGR09",
+            "fecha": "2023-05-31 05:50:17",
+            "tipo": "SALIDA"
+        },
+        "-NWkM-NcfLF5BnsoUFo3": {
+            "curp": "OEAF771012HMCRGR09",
+            "fecha": "2023-05-31 05:50:58",
+            "tipo": "ENTRADA"
+        }
+    }
+}
