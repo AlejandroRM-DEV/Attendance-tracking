@@ -15,20 +15,39 @@ export default function App() {
     getBarCodeScannerPermissions();
   }, []);
 
+  const registry = (type, curp) => {
+    const myHeaders = new Headers();
+    myHeaders.append("Content-Type", "application/json");
+
+    const raw = JSON.stringify({
+      "curp": curp,
+      "tipo": type,
+      "fecha": new Date().toISOString()
+    });
+
+    const requestOptions = {
+      method: 'POST',
+      headers: myHeaders,
+      body: raw,
+      redirect: 'follow'
+    };
+
+    fetch("https://XXXXXXXXXXXXXX.firebaseio.com/bitacora.json", requestOptions)
+      .then(response => response.text())
+      .then(result => console.log("TO DO"))
+      .catch(error => console.log('error', error));
+  }
+
   const handleBarCodeScanned = ({ type, data }) => {
-    setScanned(true);
+    setScanned(true)
     Alert.alert('REGISTRAR', data, [
       {
         text: 'SALIDA',
-        onPress: () => {
-          console.log('TO DO')
-        },
+        onPress: () => registry('SALIDA', data)
       },
       {
         text: 'ENTRADA',
-        onPress: () => { 
-          console.log('TO DO') 
-        }
+        onPress: () => registry('ENTRADA', data)
       },
     ]);
   };
