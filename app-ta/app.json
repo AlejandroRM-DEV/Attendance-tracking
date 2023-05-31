@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "app-ta",
-    "slug": "app-ta",
+    "name": "Attendance Tracking",
+    "slug": "Attendance Tracking",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
