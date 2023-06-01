@@ -113,13 +113,13 @@ android {
 
     compileSdkVersion rootProject.ext.compileSdkVersion
 
-    namespace "com.appta"
+    namespace 'github.com.AlejandroRMDEV'
     defaultConfig {
-        applicationId "com.appta"
+        applicationId 'github.com.AlejandroRMDEV'
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
-        versionName "1.0"
+        versionName "1.0.0"
         missingDimensionStrategy 'react-native-camera', 'general'
     }
 

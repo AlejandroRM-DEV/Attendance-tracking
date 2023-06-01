@@ -31,7 +31,7 @@ export default function App() {
 			body: raw,
 			redirect: "follow",
 		};
-
+		
 		fetch(`${process.env.FIREBASE}/attendance.json`, requestOptions)
 			.then((response) => {
 				if (!response.ok) {
